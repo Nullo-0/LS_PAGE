@@ -1,0 +1,115 @@
+/*HERO*/
+.slider-box{
+    width: auto;
+    margin: auto;
+    margin: auto;
+    overflow: hidden;
+    
+}
+.slider-box ul{
+    display: none;
+    margin: 158px 0 0 0;
+    display: flex;
+    padding: 0;
+    width: 400%;
+    animation: slide 30s infinite alternate ease-in-out;
+}
+.slider-box li{
+    display: none;
+    width: 100%;
+    list-style: none;
+    position: relative;
+}
+.slider-box img{
+    width: 100%;
+    height: 100%;
+    position: relative;
+    
+}
+
+@keyframes slide {
+    0% { margin-left: 0; }
+    20% { margin-left: 0; }
+    25% { margin-left: -100%; }
+    45% { margin-left: -100%; }
+    50% { margin-left: -200%; }
+    70% { margin-left: -200%; }
+    75% { margin-left: -300%; }
+    100% { margin-left: -300%; }
+}  
+
+
+
+
+hr{
+    margin: 10px 200px;
+}
+
+
+
+/*BANNER DE NOTICIAS*/
+.img_cont{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.img_cont .maintenance_img{
+    height: 600px;
+}
+.img_cont div{
+    display: flex;
+    flex-direction: column;
+}
+.img_cont div h3{
+    font-size: 40pt;
+    color: #18377A;
+    float: right;
+    text-align: right;
+    line-height: 1;
+}
+.img_cont div p{
+    color: #18377A;
+    font-weight: 500;
+    font-size: 20pt;
+    text-align: right;
+    margin-top: 20px;
+}
+
+
+
+
+/*CLIENTES*/ 
+.clients_box {
+    padding: 30px 0;
+    display: flex;
+    flex-direction: column;
+} 
+.clients_box h1 {
+    color: #18377A;
+    text-align: center;
+}
+.clients_box .clients_logo {
+    margin:  20px 0;
+    padding: 0 5%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+}
+.clients_box .clients_logo div {
+    margin: 10px;
+    flex: 1 0 10%;
+    max-width: 300px;
+}
+.clients_box .clients_logo div img {
+    width: 100%;
+    height: auto;
+    max-width: 100%;
+}
+/*CLIENTES*/
+
+
+
+
+@media only screen and (max-width:1400px) {
+    
+}

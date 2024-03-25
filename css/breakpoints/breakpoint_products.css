@@ -1,0 +1,23 @@
+@media only screen and (max-width: 600px) {
+
+    .order_box{
+        display: none;
+    }
+    .slider-box{
+        display: none;
+    }
+
+
+/* NUESTROS PRODUCTOS */
+.product_ttl h1{
+    text-align: center;
+    color: #18377A;
+    font-size: 18pt;
+    margin-top: 15px;
+}
+/* NUESTROS PRODUCTOS */
+
+
+
+    
+} 

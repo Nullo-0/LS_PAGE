@@ -1,0 +1,33 @@
+@media only screen and (max-width: 600px) {
+
+
+
+
+/* CONTACT_BLOCK */
+.contact{
+    margin:   0  ;
+    padding: 0px;
+}
+.contact .contact_title {
+    color: #18377A;
+}
+.contact .contact_title h3{
+    text-align: center;
+    font-size: 18pt;
+}
+.contact .contact_title h5{
+    text-align: center;
+    font-size: 14pt;
+    font-weight: 500;
+}
+
+
+
+
+.contact .contact_block{
+    display: flex;
+    justify-content: space-evenly;
+    margin: 0 200px;
+}
+
+}

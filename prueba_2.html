@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Header para móviles</title>
+
+    <style>
+
+        /* Estilos para el encabezado */
+        body{
+            padding: 0;
+            margin: 0;
+        }
+        .mobile_headline {
+            display: flex;
+            align-items: center;
+            background-color: #18377A;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.5);
+            color: #fff;
+            padding: 10px 20px;
+        }
+
+        /* Estilos para el menú icono */
+        .menu-icon {
+            font-size: 24px;
+            cursor: pointer;
+        }
+
+        /* Estilos para el logo */
+        .logo {
+            font-size: 20px;
+        }
+
+        /* Estilos para el botón de llamado a la acción */
+        .cta button {
+            background-color: #fff;
+            color: #333;
+            padding: 8px 16px;
+            border: none;
+            cursor: pointer;
+        }
+
+        /* Estilos para el menú lateral */
+        .menu {
+            position: fixed;
+            top: 0;
+            left: -400px;
+            width: 260px;
+            height: 100%;
+            background-color: #122a5e;
+            padding: 20px;
+            transition: left 0.3s ease;
+        }
+
+        .menu ul {
+            list-style-type: none;
+            padding: 0;
+        }
+
+        .menu li {
+            margin-bottom: 10px;
+        }
+
+        .menu a {
+            color: #fff;
+            text-decoration: none;
+        }
+
+        /* Estilos para la superposición */
+        .overlay {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background-color: rgba(0, 0, 0, 0.5);
+            display: none;
+        }
+
+        /* Estilos para el contenido de la página */
+        .content {
+            padding: 20px;
+        }
+
+        .menu.open {
+            left: 0;
+        }
+
+        .overlay.active {
+            display: block;
+        }
+
+
+    </style>
+
+</head>
+<body>
+
+<div class="mobile_headline">
+    <div class="menu-icon" onclick="toggleMenu()">&#9776;</div>
+    <div>
+        <div class="logo">Logo</div>
+    </div>
+    
+</div>
+
+<div class="overlay" onclick="closeMenu()"></div>
+
+<div class="menu">
+
+    <div>
+        <div class="cta">
+            <button>LLamar a la acción</button>
+        </div>
+        
+        <hr>
+
+        <ul>
+            <li><a href="#">Inicio</a></li>
+            <li><a href="#">Nosotros</a></li>
+            <li><a href="#">Productos</a></li>
+            <li><a href="#">Contacto</a></li>
+        </ul>
+
+        <hr>
+
+        <ul>
+            <li><a href="#">Sacos Tejidos</a></li>
+            <li><a href="#">Telas</a></li>
+            <li><a href="#">Mallas</a></li>
+            <li><a href="#">Impermeables</a></li>
+        </ul>
+    </div>
+
+    <div>
+
+    </div>
+
+</div>
+
+<div class="content">
+    <!-- Contenido de la página -->
+</div>
+
+<script>
+
+    function toggleMenu() {
+        document.querySelector('.menu').classList.toggle('open');
+        document.querySelector('.overlay').classList.toggle('active');
+    }
+
+    function closeMenu() {
+        document.querySelector('.menu').classList.remove('open');
+        document.querySelector('.overlay').classList.remove('active');
+    }
+
+</script>
+</body>
+</html>
+
+
