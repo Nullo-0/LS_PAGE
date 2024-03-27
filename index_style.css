@@ -127,11 +127,15 @@ hr{
 .offers_box{
     margin: 70px 0;
     padding: 0 5%;
+    flex-direction: column;
+    display: flex;
+    align-items: center;
     
 }
 .offers_box h1 {
     font-weight: 600;
     color: #18377A;
+
     text-align: center;
     margin-top: 20px;
     margin-bottom: 30px;
@@ -140,7 +144,7 @@ hr{
     display: grid;
     justify-items: center;
     grid-template-columns: repeat(5, 1fr); /* 5 columnas con el mismo ancho */
-    gap: 10px;
+    gap: 30px;
     grid-row-gap:0
 }
 .offers_box .products_box a{
@@ -197,10 +201,15 @@ hr{
     height: 20px;
     width: 20px;
 }
-.offers_box .products_box div span button{
+.offers_box .products_box div span a{
     margin: 15px 0;
     height: 40px;
     width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    list-style: none;
+    padding: 5% 0;
     border-radius: 17px;
     background-color: #09BB1B;
     color: #fff;
@@ -210,14 +219,18 @@ hr{
 }
 .offers_box .button_more{
     margin: 20px;
-    width: 250px;
+    width: 100%;
+    max-width: 400px;
     height: 40px;
     font-size: large;
     font-weight: bold;
+    list-style: none;
+    text-decoration: none;
     color: #fff;
     border-radius: 70px;
-    display: block;
-    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
     border: 0;
     background-color: #18377A
 }  
